@@ -1,5 +1,5 @@
 
-# poya_s_application2
+# Learnig_English
 ### Table of contents
 - [System requirements](#system-requirements)
 - [Figma design guidelines for better UI accuracy](#figma-design-guideline-for-better-accuracy)
@@ -15,10 +15,7 @@
 Dart SDK Version 2.18.0 or greater.
 Flutter SDK Version 3.3.0 or greater.
 
-### Figma design guidelines for better UI accuracy
 
-Read our guidelines to increase the accuracy of design-to-code conversion by optimizing Figma designs.
-https://docs.dhiwise.com/docs/Designguidelines/intro
 
 
 
