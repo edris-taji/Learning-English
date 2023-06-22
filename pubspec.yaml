@@ -1,4 +1,4 @@
-name: poya_s_application2
+name: poya_s_application6
 description: A new Flutter project.
 version: 1.0.0+1
 environment: 
@@ -8,7 +8,7 @@ dependencies:
     sdk: flutter
   cached_network_image: ^3.2.1
   flutter_svg: ^1.1.6
-  intl: ^0.17.0
+  intl: ^0.18.0
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
@@ -22,3 +22,5 @@ flutter:
       fonts: 
         - asset: assets/fonts/InterRegular.ttf
           weight: 400
+        - asset: assets/fonts/InterExtraBold.ttf
+          weight: 800

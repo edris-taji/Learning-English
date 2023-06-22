@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:poya_s_application2/core/app_export.dart';
+import 'package:poya_s_application6/core/app_export.dart';
 
 class CustomButton extends StatelessWidget {
   CustomButton(
-      {this.padding,
+      {this.shape,
+      this.padding,
       this.variant,
       this.fontStyle,
       this.alignment,
@@ -14,6 +15,8 @@ class CustomButton extends StatelessWidget {
       this.text,
       this.prefixWidget,
       this.suffixWidget});
+
+  ButtonShape? shape;
 
   ButtonPadding? padding;
 
@@ -89,29 +92,67 @@ class CustomButton extends StatelessWidget {
       ),
       padding: _setPadding(),
       backgroundColor: _setColor(),
-      shape: RoundedRectangleBorder(),
+      shape: RoundedRectangleBorder(
+        borderRadius: _setBorderRadius(),
+      ),
     );
   }
 
   _setPadding() {
     switch (padding) {
+      case ButtonPadding.PaddingT57:
+        return getPadding(
+          left: 28,
+          top: 57,
+          right: 28,
+          bottom: 57,
+        );
+      case ButtonPadding.PaddingAll10:
+        return getPadding(
+          all: 10,
+        );
       default:
         return getPadding(
-          all: 7,
+          all: 6,
         );
     }
   }
 
   _setColor() {
     switch (variant) {
-      default:
+      case ButtonVariant.FillBluegray100:
         return ColorConstant.blueGray100;
+      case ButtonVariant.FillPink100:
+        return ColorConstant.pink100;
+      case ButtonVariant.FillTeal200:
+        return ColorConstant.teal200;
+      default:
+        return ColorConstant.pink10001;
+    }
+  }
+
+  _setBorderRadius() {
+    switch (shape) {
+      case ButtonShape.RoundedBorder8:
+        return BorderRadius.circular(
+          getHorizontalSize(
+            8.00,
+          ),
+        );
+      case ButtonShape.Square:
+        return BorderRadius.circular(0);
+      default:
+        return BorderRadius.circular(
+          getHorizontalSize(
+            20.00,
+          ),
+        );
     }
   }
 
   _setFontStyle() {
     switch (fontStyle) {
-      default:
+      case ButtonFontStyle.InterRegular16:
         return TextStyle(
           color: ColorConstant.black900,
           fontSize: getFontSize(
@@ -120,18 +161,49 @@ class CustomButton extends StatelessWidget {
           fontFamily: 'Inter',
           fontWeight: FontWeight.w400,
         );
+      case ButtonFontStyle.InterExtraBold24WhiteA700:
+        return TextStyle(
+          color: ColorConstant.whiteA700,
+          fontSize: getFontSize(
+            24,
+          ),
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.w800,
+        );
+      default:
+        return TextStyle(
+          color: ColorConstant.black900,
+          fontSize: getFontSize(
+            24,
+          ),
+          fontFamily: 'Inter',
+          fontWeight: FontWeight.w800,
+        );
     }
   }
 }
 
+enum ButtonShape {
+  Square,
+  RoundedBorder20,
+  RoundedBorder8,
+}
+
 enum ButtonPadding {
-  PaddingAll7,
+  PaddingAll6,
+  PaddingT57,
+  PaddingAll10,
 }
 
 enum ButtonVariant {
+  FillPink10001,
   FillBluegray100,
+  FillPink100,
+  FillTeal200,
 }
 
 enum ButtonFontStyle {
+  InterExtraBold24,
   InterRegular16,
+  InterExtraBold24WhiteA700,
 }

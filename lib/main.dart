@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:poya_s_application2/routes/app_routes.dart';
+import 'package:poya_s_application6/routes/app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -17,9 +17,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.standard,
       ),
-      title: 'poya_s_application2',
+      title: 'poya_s_application6',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.androidLargeOneScreen,
+      initialRoute: AppRoutes.androidLargeFourScreen,
       routes: AppRoutes.routes,
     );
   }
