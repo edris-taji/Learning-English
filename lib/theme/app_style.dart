@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:poya_s_application6/core/app_export.dart';
+import 'package:poya_s_application10/core/app_export.dart';
 
 class AppStyle {
+  static TextStyle txtInterExtraBold15 = TextStyle(
+    color: ColorConstant.black900,
+    fontSize: getFontSize(
+      15,
+    ),
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w800,
+  );
+
   static TextStyle txtInterExtraBold24 = TextStyle(
     color: ColorConstant.black900,
     fontSize: getFontSize(
@@ -29,24 +38,6 @@ class AppStyle {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txtInterExtraBold24WhiteA700 = TextStyle(
-    color: ColorConstant.whiteA700,
-    fontSize: getFontSize(
-      24,
-    ),
-    fontFamily: 'Inter',
-    fontWeight: FontWeight.w800,
-  );
-
-  static TextStyle txtInterRegular16Black900 = TextStyle(
-    color: ColorConstant.black900,
-    fontSize: getFontSize(
-      16,
-    ),
-    fontFamily: 'Inter',
-    fontWeight: FontWeight.w400,
-  );
-
   static TextStyle txtInterRegular12 = TextStyle(
     color: ColorConstant.black900,
     fontSize: getFontSize(
@@ -56,22 +47,31 @@ class AppStyle {
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txtInterRegular24 = TextStyle(
-    color: ColorConstant.black900,
+  static TextStyle txtInterRegular15 = TextStyle(
+    color: ColorConstant.deepOrangeA700,
     fontSize: getFontSize(
-      24,
+      15,
     ),
     fontFamily: 'Inter',
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle txtInterRegular16 = TextStyle(
-    color: ColorConstant.gray900,
+  static TextStyle txtInterRegular15Black900 = TextStyle(
+    color: ColorConstant.black900,
     fontSize: getFontSize(
-      16,
+      15,
     ),
     fontFamily: 'Inter',
     fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle txtInterExtraBold15IndigoA700 = TextStyle(
+    color: ColorConstant.indigoA700,
+    fontSize: getFontSize(
+      15,
+    ),
+    fontFamily: 'Inter',
+    fontWeight: FontWeight.w800,
   );
 
   static TextStyle txtRobotoRegular20 = TextStyle(
@@ -80,6 +80,15 @@ class AppStyle {
       20,
     ),
     fontFamily: 'Roboto',
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle txtInterRegular18 = TextStyle(
+    color: ColorConstant.black900,
+    fontSize: getFontSize(
+      18,
+    ),
+    fontFamily: 'Inter',
     fontWeight: FontWeight.w400,
   );
 }

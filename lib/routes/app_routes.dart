@@ -1,26 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:poya_s_application6/presentation/android_large_four_screen/android_large_four_screen.dart';
-import 'package:poya_s_application6/presentation/android_large_two_screen/android_large_two_screen.dart';
-import 'package:poya_s_application6/presentation/android_large_three_screen/android_large_three_screen.dart';
-import 'package:poya_s_application6/presentation/android_large_five_screen/android_large_five_screen.dart';
-import 'package:poya_s_application6/presentation/app_navigation_screen/app_navigation_screen.dart';
+import 'package:poya_s_application10/presentation/second_page_screen/second_page_screen.dart';
+import 'package:poya_s_application10/presentation/thied_page_screen/thied_page_screen.dart';
+import 'package:poya_s_application10/presentation/fifth_page_screen/fifth_page_screen.dart';
+import 'package:poya_s_application10/presentation/the_word_screen/the_word_screen.dart';
+import 'package:poya_s_application10/presentation/words_list_screen/words_list_screen.dart';
+import 'package:poya_s_application10/presentation/app_navigation_screen/app_navigation_screen.dart';
 
 class AppRoutes {
-  static const String androidLargeFourScreen = '/android_large_four_screen';
+  static const String secondPageScreen = '/second_page_screen';
 
-  static const String androidLargeTwoScreen = '/android_large_two_screen';
+  static const String thiedPageScreen = '/thied_page_screen';
 
-  static const String androidLargeThreeScreen = '/android_large_three_screen';
+  static const String fifthPageScreen = '/fifth_page_screen';
 
-  static const String androidLargeFiveScreen = '/android_large_five_screen';
+  static const String theWordScreen = '/the_word_screen';
+
+  static const String wordsListScreen = '/words_list_screen';
 
   static const String appNavigationScreen = '/app_navigation_screen';
 
   static Map<String, WidgetBuilder> routes = {
-    androidLargeFourScreen: (context) => AndroidLargeFourScreen(),
-    androidLargeTwoScreen: (context) => AndroidLargeTwoScreen(),
-    androidLargeThreeScreen: (context) => AndroidLargeThreeScreen(),
-    androidLargeFiveScreen: (context) => AndroidLargeFiveScreen(),
+    secondPageScreen: (context) => SecondPageScreen(),
+    thiedPageScreen: (context) => ThiedPageScreen(),
+    fifthPageScreen: (context) => FifthPageScreen(),
+    theWordScreen: (context) => TheWordScreen(),
+    wordsListScreen: (context) => WordsListScreen(),
     appNavigationScreen: (context) => AppNavigationScreen()
   };
 }
